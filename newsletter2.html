@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Guiraud Laws</title>
+    <style type="text/css">
+        /* Client-specific resets */
+        body, table, td, a { 
+            -webkit-text-size-adjust: 100%; 
+            -ms-text-size-adjust: 100%; 
+        }
+        table, td { 
+            mso-table-lspace: 0pt; 
+            mso-table-rspace: 0pt; 
+        }
+        img { 
+            -ms-interpolation-mode: bicubic; 
+            border: 0; 
+            height: auto; 
+            line-height: 100%; 
+            outline: none; 
+            text-decoration: none; 
+        }
+        
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d5d5d5;
+            line-height: 1.4;
+            color: #000000;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-size: 11px;
+        }
+        
+        .h2-size {
+            font-size: 20px;
+        }
+        
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-justify {
+            text-align: justify;
+        }
+        
+        /* Buttons */
+        .btn {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            font-size: 10px;
+            padding: 6px 20px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        
+        .btn-yellow {
+            background-color: #cdb452;
+            color: black;
+        }
+        
+        .nav-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4d5958;
+            padding: 5px 20px;
+            font-size: 8px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        
+        .nav-button-contact {
+            background-color: #ccb452;
+            color: black;
+            font-weight: 600;
+        }
+        
+        /* Layout */
+        .main-container {
+            max-width: 650px;
+            margin: 10px auto;
+            background-color: #ffffff;
+        }
+        
+        .info {
+            text-align: center;
+            margin-top: 10px;
+            color: #4d5958;
+        }
+        
+        /* Header */
+        .header {
+            padding: 20px;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 40px;
+            width: 250px;
+        }
+        
+        /* Intro section */
+        .intro {
+            position: relative;
+            height: 300px;
+            padding: 2rem;
+            overflow: hidden;
+            background-image: url('https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg?t=st=1744051854~exp=1744055454~hmac=822433e5f80bf4d2e2df86cfb7d3f9a3f282f83f881d6c8a1df4b427593bc297&w=1380');
+            background-size: cover;
+            background-position: center;
+            transform: scaleX(-1);
+        }
+        
+        .intro-content {
+            position: relative;
+            width: 310px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 1rem;
+            z-index: 1;
+        }
+        
+        .intro-content h2 {
+            font-size: 16px;
+            color: #cdb555;
+            position: relative;
+        }
+        
+        .intro-content h2::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            margin-left: 8px;
+            width: 80px;
+            height: 0.5px;
+            background-color: black;
+        }
+        
+        .intro-content h1 {
+            color: #cdb555;
+            font-size: 40px;
+        }
+        
+        .intro h1 span {
+            color: #333;
+        }
+        
+        .intro p {
+            color: rgb(90, 90, 90);
+            letter-spacing: 0.5px;
+        }
+        
+        /* News section */
+        .news-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            background-color: #cdb452;
+            padding: 2rem;
+        }
+        
+        .news-image {
+            width: 55%;
+        }
+        
+        .news-image img {
+            width: 100%;
+            height: auto;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-content {
+            width: 45%;
+            color: #ffffff;
+        }
+        
+        .news-content p {
+            text-align: justify;
+        }
+        
+        /* Real estate section */
+        .section-content {
+            display: flex;
+        }
+        
+        .section-content img {
+            margin-top: 5px;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-content p {
+            margin-top: 15px;
+            color: #4d5958;
+            text-align: justify;
+        }
+        
+        .section-left, .section-right {
+            width: 50%;
+            padding: 25px;
+            padding-bottom: 3rem;
+            text-align: start;
+        }
+        
+        .section-content .btn {
+            background-color: #cdb452;
+        }
+        
+        .section-right {
+            background-color: #f1f2f2;
+        }
+        
+        /* Territorial section */
+        .territorial-section {
+            position: relative;
+            background-color: black;
+            color: #ffffff;
+            padding: 3.2rem 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .territorial-img {
+            margin-top: 1rem;
+            width: 40%;
+        }
+        
+        .territorial-img img {
+            width: 90%;
+            height: auto;
+            box-shadow: 15px -15px 0px #cdb452;
+        }
+        
+        .territorial-content {
+            width: 60%;
+        }
+        
+        .territorial-content .btn {
+            background-color: #cdb452;
+        }
+        
+        /* Services section */
+        .real-estate-services {
+            background-color: #fdffff;
+            padding: 1.5rem;
+        }
+        
+        .services-content {
+            background-color: #eef0f2;
+            padding: 20px;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .services-content .btn {
+            color: black;
+            background-color: #cdb452;
+        }
+        
+        /* Testimonial section */
+        .testimonial {
+            margin: 1.5rem 1.5rem 0 1.5rem;
+            position: relative;
+            background-color: rgba(77, 89, 88, 0.8);
+            color: #ffffff;
+            background-image: url('https://images.pexels.com/photos/12495663/pexels-photo-12495663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .testimonial-background {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .testimonial-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 2rem;
+        }
+        
+        .img-sec {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .img-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #cdb555;
+        }
+        
+        .ceo-name h3 {
+            color: #cdb452;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .ceo-name p {
+            font-size: 9px;
+            text-align: center;
+        }
+        
+        /* Closing section */
+        .closing-section {
+            margin: 0 1.5rem 0 1.5rem;
+            background-color: #e3e3e3;
+            padding: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .contact-info {
+            background-color: #cdb555;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: #cdb555;
+            color: white;
+            padding: 20px;
+            margin-top: 1.5rem;
+        }
+        
+        .icons-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .social-icon {
+            padding: 8px 8px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        .social-icon img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
+        
+        .address {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .copyright {
+            margin: 8px 10px;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width: 575px) {
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .news-section {
+                flex-direction: column;
+                padding: 0.5rem;
+                gap: 0px;
+            }
+            
+            .territorial-section {
+                flex-direction: column;
+            }
+            
+            .section-content,
+            .services-content,
+            .closing-section,
+            .testimonial-content {
+                flex-direction: column;
+            }
+            
+            .news-image,
+            .news-content,
+            .section-left,
+            .section-right,
+            .territorial-img,
+            .territorial-content {
+                width: 100% !important;
+                padding: 15px;
+            }
+            
+            .nav-button {
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            }
+            
+            .footer {
+                flex-direction: column;
+                gap: 0px;
+                text-align: center;
+            }
+            
+            .footer .part2 .navbar {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preheader text -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        Personalized legal solutions for your international needs this April
+    </div>
+    
+    <!-- Main container -->
+    <table class="main-container" border="0" cellpadding="0" cellspacing="0" width="650">
+        <tr>
+            <td class="info">
+                Personalized legal solutions for your international needs this April
+            </td>
+        </tr>
+        
+        <!-- Header -->
+        <tr>
+            <td class="header">
+                <a href="https://guiraud.law/" target="_blank">
+                    <img class="logo" src="https://guiraud.law/wp-content/uploads/2024/02/logo.png" alt="Guiraud Law Logo" width="250" />
+                </a>
+                
+                <table class="navbar" border="0" cellpadding="0" cellspacing="5">
+                    <tr>
+                        <td><a href="https://guiraud.law" class="nav-button" target="_blank">Home</a></td>
+                        <td><a href="https://guiraud.law/#news" class="nav-button" target="_blank">News</a></td>
+                        <td><a href="https://guiraud.law/#testimonial" class="nav-button" target="_blank">Testimonials</a></td>
+                        <td><a href="https://guiraud.law/#contact" class="nav-button nav-button-contact" target="_blank">Contact Us</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Intro Section -->
+        <tr>
+            <td class="intro">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <table class="intro-content" border="0" cellpadding="0" cellspacing="0" width="310">
+                                <tr>
+                                    <td>
+                                        <h2 class="text-uppercase">Introducing</h2>
+                                        <h1>Guiraud <span>Law</span></h1>
+                                        <p class="primary-margin">
+                                            A top legal firm specializing in exceptional services for foreign
+                                            clients. From navigating international regulations to cross-border
+                                            advice, we're here to guide you every step of the way.
+                                        </p>
+                                        <a class="btn" href="" target="_blank">view online</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- News Section -->
+        <tr>
+            <td class="news-section">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="news-image">
+                            <a href="https://www.youtube.com/watch?v=ysmicwqZ2Xg" target="_blank">
+                                <img src="https://i.postimg.cc/cCFRJvCw/Screenshot-2025-03-27-133343.png" alt="News Image" width="100%" />
+                            </a>
+                        </td>
+                        <td class="news-content">
+                            <h2 class="h2-size">News & Articles</h2>
+                            <p>
+                                Staying connected with Guiraud Law about trends in Panama's legal
+                                community, financial services industry, and economy sounds
+                                important. It's crucial to stay updated on these trends to navigate
+                                business and legal landscapes effectively.
+                                <br /><br />
+                                Panama is a prime spot for real estate, offering economic stability,
+                                affordable living, and stunning landscapes. With tax perks, growing
+                                infrastructure, and thriving expat communities, it's ideal for
+                                retirees and investors. Explore luxury and eco-friendly
+                                opportunities.
+                            </p>
+                            <div class="mt-15">
+                                <a href="https://www.youtube.com/watch?v=ysmicwqZ2Xg" class="btn" target="_blank">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Real Estate Section -->
+        <tr>
+            <td class="section-content">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="section-left">
+                            <h2 class="primary-margin h2-size">
+                                The Top Real Estate
+                                <span>Investment Destination</span> In 2025
+                            </h2>
+                            <a href="https://techbullion.com/why-panama-is-emerging-as-the-destination-for-real-estate-investment-in-2025/" target="_blank">
+                                <img src="https://content.presspage.com/uploads/2278/199d29d5-aba3-4fc4-9937-6e261b83e5c5/1920_adobestock-133936951.jpeg?10000" alt="News Image" width="100%" />
+                            </a>
+                            <p>
+                                In recent years, Panama has emerged as a global hotspot for real
+                                estate investment, attracting individuals from diverse backgrounds;
+                                ranging from retirees and expatriates to high-net-worth investors
+                                and multinational corporations. This trend has emerged from a
+                                convergence of economic, legal, geopolitical, and cultural factors
+                                that position Panama as a uniquely advantageous destination for
+                                property acquisition. Below, we delve into the intricate drivers of
+                                this phenomenon, analyzing the country's appeal through the lenses
+                                of economics, governance, lifestyle, and strategic location.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://techbullion.com/why-panama-is-emerging-as-the-destination-for-real-estate-investment-in-2025/" class="btn btn-yellow">Learn More</a>
+                            </p>
+                        </td>
+                        <td class="section-right">
+                            <h2 class="primary-margin h2-size">
+                                Why
+                                <span>North Americans Choose Panama</span> For A
+                                Second Home
+                            </h2>
+                            <a href="https://nyweekly.com/lifestyle/why-north-americans-are-opting-for-panama-as-a-second-home/" target="_blank">
+                                <img src="https://img.freepik.com/premium-photo/city-skyline-twilight-panama-city-panama-central-america_660575-631.jpg?w=900" alt="Panama Skyline" width="100%" />
+                            </a>
+                            <p>
+                                Panama has become an increasingly attractive destination for North
+                                Americans seeking a second residency. This trend is driven by
+                                several factors, including Panama's stable and growing economy,
+                                favorable tax policies, and high quality of life. The country boasts
+                                modern infrastructure, world-class healthcare, and a lower cost of
+                                living compared to many North American cities. Additionally, Panama
+                                offers various legal pathways for residency, such as the Friendly
+                                Nations Visa and Pensionado Program, making it an appealing choice
+                                for investors, retirees, and remote workers. Whether looking to
+                                diversify investments, enjoy a tropical lifestyle, or secure a
+                                retirement haven, many North Americans are finding Panama to be the
+                                ideal destination.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://nyweekly.com/lifestyle/why-north-americans-are-opting-for-panama-as-a-second-home/" class="btn btn-yellow" target="_blank">learn more</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Territorial Section -->
+        <tr>
+            <td class="territorial-section">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="territorial-img">
+                            <a href="https://www.centralamerica.com/investing/business/panama-taxes-guide-for-expats/" target="_blank">
+                                <img src="https://thegreenvoyage.com/wp-content/uploads/2024/04/shutterstock_789477430-1.jpg" alt="Tax Guide" width="260" />
+                            </a>
+                        </td>
+                        <td class="territorial-content">
+                            <h2 class="h2-size">
+                                An Expat Guide to
+                                <span>Panama Taxes and the Territorial</span>
+                                System
+                            </h2>
+                            <p class="text-justify mt-5">
+                                Panama is a top real estate hotspot for 2025, offering a stable
+                                economy, tax-friendly laws, and no restrictions on foreign
+                                ownership. With 20-year tax exemptions, robust infrastructure, and
+                                attractive residency programs, it's perfect for retirees,
+                                entrepreneurs, and investors. Explore unmatched opportunities in
+                                this eco-friendly and vibrant hub
+                            </p>
+                            <p class="mt-15">
+                                <a href="https://www.centralamerica.com/investing/business/panama-taxes-guide-for-expats/" class="btn btn-yellow" target="_blank">learn More</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Services Section -->
+        <tr>
+            <td class="real-estate-services">
+                <table class="services-content" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="70%">
+                            <h2 class="mb-5">
+                                Real Estate <span>Services</span>
+                            </h2>
+                            <p>
+                                At Guiraud Law, we are dedicated to ensuring your experience is as
+                                seamless and stress-free as possible. Our team of property experts
+                                is committed to safeguarding your real estate interests and
+                                preserving your legal rights.
+                            </p>
+                            <div class="mt-15"><a href="" class="btn btn-yellow" target="_blank">Contact Us</a></div>
+                            <p class="mt-15">
+                                The Republic of Panama's legal system is robust and aligned with
+                                international standards, but navigating its complexities can be
+                                daunting for those unfamiliar with its intricacies. As a law firm
+                                with a real estate broker license, we provide comprehensive
+                                services to assist foreign clients with property acquisitions
+                                across Panama
+                            </p>
+                        </td>
+                        <td width="30%" class="text-center">
+                            <img src="https://www.noviplat.com/img/others/about-2.jpg" alt="Service-section" width="250" class="img-shadow" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Testimonial Section -->
+        <tr>
+            <td class="testimonial">
+                <table class="testimonial-background" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="testimonial-content">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="60%">
+                                        <h2 class="text-yellow">Testimonials</h2>
+                                        <p>
+                                            Idaliz Guiraud an outstanding lawyer and would strongly recommend her for any of your legal needs! During the pandemic, I was not able to travel and thus not met physically with a lawyer so I was apprehensive about retaining a lawyer I couldn't meet with. Idaliz organized a whatsapp call immediately and I couldn't have made a better choice, she does what she says she is going to do, when she says she'll do it - her advice is firm, reasonable and fair! Idaliz is also very responsive to communications and a great listener.
+                                        </p>
+                                        <p class="mt-15">
+                                            <a href="https://guiraud.law/#contact" class="btn btn-yellow" target="_blank">Contact Us</a>
+                                        </p>
+                                    </td>
+                                    <td width="40%">
+                                        <table class="img-sec" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div class="img-box">
+                                                        <img src="https://guiraud.law/wp-content/uploads/2024/03/John-Martin.png" alt="John Martin" />
+                                                    </div>
+                                                    <div class="ceo-name">
+                                                        <h3>John Martin</h3>
+                                                        <p>Founder and CEO of TAW Technologies</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <!-- Closing Section -->
+        <tr>
+            <td class="closing-section">
+                <p>
+                    Thank you for considering Guiraud Law. We look forward to working with
+                    you and supporting all your legal needs.
+                </p>
+                <div class="contact-info">
+                    PLEASE REPLY TO INFO@GUIRAUD.LAW OR CALL US DIRECTLY AT (+507)
+                    391-3255.
+                </div>
+            </td>
+        </tr>
+        
+        <!-- Footer -->
+        <tr>
+            <td class="footer">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="part1" width="40%">
+                            <img src="https://guiraud.law/wp-content/uploads/2024/03/logo-white.png" alt="Guiraud Law Logo" class="footer-logo" />
+                            <div class="icons-row">
+                                <div class="social-icon">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" alt="Instagram" />
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn" />
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/4701/4701482.png" alt="facebook" />
+                                    </a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X" />
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="part2" width="60%">
+                            <table class="navbar" border="0" cellpadding="0" cellspacing="10">
+                                <tr>
+                                    <td><a href="https://guiraud.law" class="nav-button" target="_blank">Home</a></td>
+                                    <td><a href="https://guiraud.law/#news" class="nav-button" target="_blank">News</a></td>
+                                    <td><a href="https://guiraud.law/#testimonial" class="nav-button" target="_blank">Testimonials</a></td>
+                                    <td><a href="https://guiraud.law/#contact" class="nav-button nav-button-white" target="_blank">Contact Us</a></td>
+                                </tr>
+                            </table>
+                            <div class="address mt-15">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" alt="Location icon" class="location-icon" />
+                                <p>Level 9, Santa Maria | Office Plex 71, Panama City, Panama</p>
+                            </div>
+                            <p class="copyright">&copy; 2025 Guiraud Law. All Rights Reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

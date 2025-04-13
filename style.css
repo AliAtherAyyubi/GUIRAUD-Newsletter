@@ -1,0 +1,452 @@
+@import url('./css/clash-grotesk.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* @font-face {
+    font-family: 'Clash Grotesk';
+    src: url('./fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+       url('./fonts/ClashGrotesk-Regular.woff') format('woff'),
+  } */
+body {
+    font-family: 'ClashGrotesk-Regular', sans-serif;
+    background-color: #d5d5d5;
+    line-height: 1.4;
+}
+p {
+    font-size: 11px;
+    /* letter-spacing: 0.5px; */
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+.h2-size{
+    font-size: 20px;
+}
+.btn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+}
+.bg-yellow{
+    background-color: #cdb452;
+}
+.primary-margin{
+    margin-bottom: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+/*  */
+.main-container {
+    position: relative;
+    max-width: 650px;
+    margin: 10px auto;
+    background-color: #ffffff;
+}
+.main-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    text-align: center;
+    margin-top: 10px;
+    color: #4d5958;
+}
+.header {
+    /* text-align: center; */
+    padding: 20px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 40px;
+    width: 250px;
+}
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.nav-button {
+    
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4d5958;
+    padding: 5px 20px;
+    /* height: 20px;
+    width: 150px; */
+    font-size: 8px;
+    text-transform: uppercase;
+    /* overflow: hidden; */
+}
+
+#contactus {
+  background-color: #ccb452;
+  color: black;
+  font-weight: 600;
+}
+/* intro section  */
+.intro {
+    position: relative;
+    height: 300px;
+    padding: 2rem 2rem;
+    overflow: hidden;
+}
+.intro::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/giant-building-with-sun_1127-400.jpg?t=st=1744051854~exp=1744055454~hmac=822433e5f80bf4d2e2df86cfb7d3f9a3f282f83f881d6c8a1df4b427593bc297&w=1380');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    z-index: 0;
+    /* background-color: rgb(255, 255, 255,0.3); */
+}
+
+.intro-content{
+    position: relative;
+    width: 310px;
+    background-color: rgb(255, 255, 255,0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 100px 100px 100px 1000px rgb(255, 255, 255,0.5);
+    z-index: 1;
+}
+.intro-content h2 {
+    font-size: 16px;
+    color: #cdb555;
+}
+.intro-content h2::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    margin-left: 8px;
+    width: 80px;
+    height: 0.5px;
+    background-color: black;
+}
+
+.intro-content h1 {
+    color: #cdb555;
+    font-size: 40px;
+}
+
+.intro h1 span {
+    color: #333;
+}
+.intro p {
+    color: rgb(90, 90, 90);
+    letter-spacing: 0.5px;
+}
+
+/* News SEction */
+.news-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    background-color: #cdb452;
+    padding: 2rem;
+    /* height: 50vh; */
+}
+.news-image {
+    width: 55%;
+    height: 70%;
+    /* padding: 15px; */
+}
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.news-content {
+    width: 45%;
+    /* padding: 10px; */
+    color: #ffffff;
+}
+.news-content p{
+    font-family: 'ClashGrotesk-Light', sans-serif;
+    text-align: justify;
+}
+
+/* Real Estate Section */
+.section-content {
+    display: flex;
+    /* padding:10px */
+}
+
+.section-content img {
+    margin-top: 5px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.section-content p {
+    margin-top:15px;
+    color: #4d5958;
+    text-align: justify;
+}
+
+.section-left, .section-right {
+    width: 50%;
+    padding: 25px;
+    padding-bottom: 3rem;
+    text-align: start;
+}
+.section-content .btn{
+    background-color: #cdb452;
+}
+.section-right {
+    background-color: #f1f2f2;
+}
+
+/* Territorial Section */
+.territorial-section {
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    padding: 3.2rem 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.territorial-img {
+    margin-top: 1rem;
+    width: 100vw;
+    height: 100%;
+    
+} 
+.territorial-img img {
+    width: 90%;
+    height: 100%;
+    box-shadow: 15px -15px 0px #cdb452;
+}
+
+.territorial-content .btn{
+    background-color: #cdb452;
+}
+
+/* Real Estate Services SEction */
+
+.real-estate-services {
+    background-color: #fdffff;
+    padding: 1.5rem;
+}
+
+.services-content {
+    background-color: #eef0f2;
+    padding: 20px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.services-content .btn{
+    color: black;
+    background-color: #cdb452;
+}
+
+/* Testimonials */
+.testimonial {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    position: relative;
+    background-color: rgb(77, 89, 88,0.8);
+    color: #ffffff;
+    background-image: url('https://images.pexels.com/photos/12495663/pexels-photo-12495663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.testimonial-background {
+    background-color: rgb(0, 0, 0,0.4);
+}
+
+.testimonial-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 2rem;
+}
+
+.testimonial .img-sec{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonial .img-sec .img-box img{
+        width: 150px; /* Adjust size as needed */
+        height: 150px; /* Adjust size as needed */
+        border-radius: 50%; /* Makes the image a circle */
+        object-fit: cover; /* Ensures the image covers the circle area */
+        border: 4px solid #cdb555;
+}
+.img-box{
+    position: relative;
+}
+
+.img-shadow-circle{
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccb452;
+    border-radius: 50%;
+    z-index: 1;
+}
+.ceo-name h3{
+    color: #cdb452;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.ceo-name p{
+    font-size: 9px;
+    text-align: center;
+}
+
+.closing-section {
+    margin: 0 1.5rem 0 1.5rem;
+    background-color: #e3e3e3;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-info {
+    background-color: #cdb555;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    /* margin: 0 15px; */
+    font-size: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #cdb555;
+    color: white;
+    padding: 20px;
+    margin-top: 1.5rem;
+}
+.footer .icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+
+}
+
+.footer .icons-row .social-icon {
+    padding: 8px 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+.footer .icons-row img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.footer .part2{
+    width: 100%;
+}
+.footer .part2 .navbar{
+margin-top: 30px;
+gap: 10px;
+}
+.footer .part2 .address{
+    display: flex;
+align-items: center;
+gap: 5px;
+}
+.copyright{
+    margin: 8px 10px;
+    
+}
+
+
+@media screen and (max-width: 575px) {
+    .header{
+        gap: 1rem;
+        
+
+    }
+    .news-section{padding: 0.5rem; gap: 0px;}
+    .territorial-section{flex-direction: column;}
+    .territorial-img{
+        width: 100%;
+    }
+    .section-content, .news-section, .teritory-main-sec,.services-content,.closing-section, .testimonial-content,.header {
+        flex-direction: column;
+    }
+    
+    .news-image, .news-content,
+    .section-left, .section-right {
+        width: 100%;
+        padding: 15px;
+    }
+    .real-estate-services{
+        padding: 0;
+    }.services-content{
+        padding: 2rem 1rem;
+    }.closing-section{
+        margin: 0;
+    }
+    .testimonial{
+        margin: 0;
+    }
+    .nav-button {
+        width: 100%;
+        /* margin-bottom: 5px; */
+        text-align: center;
+        padding: 5px;
+        font-size: 10px !important;
+    }
+    .footer .part2 .navbar{
+        margin-top: 15px;
+        
+        }
+    .footer{
+        margin: 0;
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+    }
+    
+    
+    h1 { font-size: 32px !important; }
+    h2, h3 { font-size: 18px !important; }
+    span { font-size: 18px !important;}
+    p, a { font-size: 13px !important; }
+}
