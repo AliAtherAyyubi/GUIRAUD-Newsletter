@@ -1,7 +1,7 @@
 # GUIRAUD LAW Newsletter
  # Guiraud Law Newsletter - HTML Email Template
 
-![Newsletter Preview](https://github.com/AliAtherAyyubi/GUIRAUD-Newsletter/blob/main/Assets/Newsletter%20Nate-1-01.jpg) *(Replace with actual preview image)*
+![Newsletter Preview](https://github.com/AliAtherAyyubi/GUIRAUD-Newsletter/blob/main/Assets/Newsletter%20Nate-1-01.jpg)
 
 ## Project Overview
 A responsive HTML email newsletter template created for Guiraud Law, designed to work across all major email clients and devices. This template was custom-built from a PDF design provided by the client.
