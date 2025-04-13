@@ -1,5 +1,4 @@
-# GUIRAUD LAW Newsletter
- # Guiraud Law Newsletter - HTML Email Template
+# Guiraud Law Newsletter - HTML Email Template
 
 ![Newsletter Preview](https://github.com/AliAtherAyyubi/GUIRAUD-Newsletter/blob/main/Assets/Newsletter%20Nate-1-01.jpg)
 
